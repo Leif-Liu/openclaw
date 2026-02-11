@@ -451,7 +451,7 @@ directory\n\nCommand exited with code 2"
   # 创建 .env 文件
   cat > /home/liufeng/openclaw/.env << 'EOF'
   # Gateway 访问令牌
-  OPENCLAW_GATEWAY_TOKEN=c1e0c17e27d3b493d5df31f0b3e3bc11f1eeaa7d2d669da0eb1d81c69084c28a
+  OPENCLAW_GATEWAY_TOKEN=xxxx
 
   # 目录配置
   OPENCLAW_CONFIG_DIR=/home/liufeng/.openclaw
@@ -468,7 +468,7 @@ directory\n\nCommand exited with code 2"
   OPENCLAW_IMAGE=openclaw:local
 
   # Z.AI API Key
-  ZAI_API_KEY=105e563ff58742f29c17b2fdfa0ef34f.zBiCsJvBiogc49nf
+  ZAI_API_KEY=xxxxxx
   EOF
 
   3. 生成 Gateway Token
@@ -486,14 +486,14 @@ directory\n\nCommand exited with code 2"
       "port": 18789,
       "auth": {
         "mode": "token",
-        "token": "c1e0c17e27d3b493d5df31f0b3e3bc11f1eeaa7d2d669da0eb1d81c69084c28a"
+        "token": "xxx"
       },
       "controlUi": {
         "allowInsecureAuth": true
       }
     },
     "env": {
-      "ZAI_API_KEY": "105e563ff58742f29c17b2fdfa0ef34f.zBiCsJvBiogc49nf"
+      "ZAI_API_KEY": ""
     },
     "agents": {
       "defaults": {
@@ -528,7 +528,7 @@ directory\n\nCommand exited with code 2"
       "mode": "token",
       "provider": "zai",
       "credentials": {
-        "apiKey": "105e563ff58742f29c17b2fdfa0ef34f.zBiCsJvBiogc49nf"
+        "apiKey": ""
       }
     }
   }
@@ -541,7 +541,7 @@ directory\n\nCommand exited with code 2"
       "mode": "token",
       "provider": "zai",
       "credentials": {
-        "apiKey": "105e563ff58742f29c17b2fdfa0ef34f.zBiCsJvBiogc49nf"
+        "apiKey": ""
       }
     }
   }
@@ -676,7 +676,7 @@ directory\n\nCommand exited with code 2"
   ssh -L 18789:127.0.0.1:18789 liufeng@<服务器IP>
 
   # 然后访问 http://127.0.0.1:18789/chat?session=main
-  # 输入 Token: c1e0c17e27d3b493d5df31f0b3e3bc11f1eeaa7d2d669da0eb1d81c69084c28a
+  # 输入 Token: xxx
 
   四、常用管理命令
 

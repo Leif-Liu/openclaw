@@ -5,7 +5,7 @@
 SERVER="liufeng@10.10.11.13"
 LOCAL_PORT=18789
 REMOTE_PORT=18789
-TOKEN="c1e0c17e27d3b493d5df31f0b3e3bc11f1eeaa7d2d669da0eb1d81c69084c28a"
+TOKEN="xxx"
 
 echo "=========================================="
 echo "     OpenClaw SSH 隧道启动"
