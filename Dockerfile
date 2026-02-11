@@ -1,7 +1,14 @@
 FROM node:22-bookworm
 
 # Install Bun (required for build scripts)
-RUN curl -fsSL https://bun.sh/install | bash
+# Use proxy if available
+ARG http_proxy
+ARG https_proxy
+RUN if [ -n "$http_proxy" ] || [ -n "$https_proxy" ]; then \
+      curl -fsSL https://bun.sh/install | http_proxy=$http_proxy https_proxy=$https_proxy bash; \
+    else \
+      curl -fsSL https://bun.sh/install | bash; \
+    fi
 ENV PATH="/root/.bun/bin:${PATH}"
 
 RUN corepack enable
